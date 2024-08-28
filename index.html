@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <section class="game">
+        <!-- Title -->
+        <div class="title">Rock Paper Scissors</div>
+
+        <!-- Display Score of player and computer -->
+        <div class="score">
+            <div class="playerScore">
+                <h2>Player</h2>
+                <p class="p-count count">0</p>
+            </div>
+            <div class="computerScore">
+                <h2>Computer</h2>
+                <p class="c-count count">0</p>
+            </div>
+        </div>
+
+        <div class="move">Choose your move</div>
+
+        <!-- Number of moves left before game ends -->
+        <div class="movesleft">Moves Left: 10</div>
+
+        <!-- Options available to player to play game -->
+        <div class="options">
+            <button class="option rock" data-option="rock">
+                <img src="./media/fist.png" alt="Rock">
+            </button>
+            <button class="option paper" data-option="paper">
+                <img src="./media/hand-paper.png" alt="Paper">
+            </button>
+            <button class="option scissor" data-option="scissors">
+                <img src="./media/scissors.png" alt="Scissors">
+            </button>
+        </div>
+
+        <!-- Computer's Choice -->
+        <div class="computerChoice">
+            <h2>Computer's Choice:</h2>
+            <div class="computer-icon"></div>
+        </div>
+
+        <!-- Final result of game -->
+        <div class="result"></div>
+
+        <!-- Reload the game -->
+        <button class="reload">Play Again</button>
+    </section>
+
+    <script defer src="index.js"></script>
+    <footer>
+        <a href="https://www.flaticon.com/free-icons/rock-paper-scissors" title="rock paper scissors icons">Rock
+            paper scissors icons created by iconading - Flaticon</a>
+    </footer>
+</body>
+
+</html>
